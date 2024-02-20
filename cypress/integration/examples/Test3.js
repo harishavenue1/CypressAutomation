@@ -2,6 +2,7 @@ describe('My Third Test Suite', ()=>{
     it('My Third Test Case', ()=>{
         cy.visit('https://rahulshettyacademy.com/AutomationPractice/')
 
+        // https://glebbahmutov.com/blog/cypress-tips-and-tricks/#deal-with-target_blank
         // instead of opening a new tab, remove attribute target from that element
         // and click to view contents on same tab
         cy.get('#opentab').invoke('removeAttr','target').click()
